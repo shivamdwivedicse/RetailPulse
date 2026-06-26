@@ -302,7 +302,7 @@ Passionate about
 - Business Intelligence
 
 LinkedIn:
-linkedin.com/in/shivam-dwivedi-27661a395
+https://www.linkedin.com/in/shivam-dwivedi-27661a395/?skipRedirect=true
 
 GitHub:
 https://github.com/shivamdwivedicse
