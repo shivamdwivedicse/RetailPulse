@@ -197,7 +197,10 @@ elif page == "📉 Churn Prediction":
 
 
 
+
 # -----------FORECASTING PAGE----------------
+
+
 elif page == "📈 Demand Forecasting":
     st.title("📈 Demand Forecasting")
     st.markdown("---")
@@ -243,7 +246,7 @@ elif page == "📈 Demand Forecasting":
     st.download_button(label = "📥 Download Forecast CSV",data = forecast_df.to_csv(index=False), file_name = 'Sales_forecast.csv',mime='text/csv')
 
 
-
+# ----------inventory optimization page---------
 
 
 elif page == "📦 Inventory Optimization":
