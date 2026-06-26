@@ -1,4 +1,4 @@
-*.csv
+*.online_retail_II.csv
 *.xlsx
 *.zip
 __pycache__/
