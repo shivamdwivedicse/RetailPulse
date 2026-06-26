@@ -154,7 +154,7 @@ elif page == "📉 Churn Prediction":
     with col1:
         st.metric("AUC-ROC Score", "0.99")
     with col2:
-        st.metric("Precision@top20%", "0.76")
+        st.metric("Precision@top20%", "0.43")
     with col3:
         at_risk = len(rfm[rfm['Segment'] == 'At risk'])
         st.metric("At Risk Customers", at_risk)
