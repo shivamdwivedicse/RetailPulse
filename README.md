@@ -11,6 +11,8 @@
 
 # 📌 Project Overview
 
+Live Demo link :- https://retailpulse-antuhyyneuskttcb4hg7dg.streamlit.app/
+
 RetailPulse AI is an end-to-end Retail Analytics platform developed to help businesses make data-driven decisions.
 
 The project combines Customer Segmentation, Churn Prediction, Demand Forecasting and Inventory Optimization into one intelligent dashboard.
