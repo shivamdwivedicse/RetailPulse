@@ -4,7 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns 
 import pickle 
+import os
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 #page configuration
 st.set_page_config(
@@ -94,7 +96,8 @@ elif page == "👥 Customer Segmentation":
     st.markdown("---")
     
     # Load data
-    rfm = pd.read_csv('rfm_segments.csv')
+    rfm = pd.read_csv(os.path.join(BASE_DIR, 'rfm_segments.csv'))
+
     
     # Metrics
     col1, col2, col3 = st.columns(3)
@@ -147,7 +150,7 @@ elif page == "📉 Churn Prediction":
     st.markdown("---")
     
     # Load data
-    rfm = pd.read_csv('rfm_segments.csv')
+    rfm = pd.read_csv(os.path.join(BASE_DIR, 'rfm_segments.csv'))
     
     # Metrics
     col1, col2, col3 = st.columns(3)
@@ -182,7 +185,7 @@ elif page == "📉 Churn Prediction":
         monetary = st.slider("Monetary (₹)", 0, 5000, 1000)
     
     # Load model
-    model = pickle.load(open('churn_model.pkl', 'rb'))
+    model = pickle.load(open(os.path.join(BASE_DIR, 'churn_model.pkl'), 'rb'))
     
     # Predict
     input_data = np.array([[recency, frequency, monetary]])
@@ -218,7 +221,7 @@ elif page == "📈 Demand Forecasting":
 
     #Load forecaste data future:-
 
-    forecast_df = pd.read_csv("Future_sales_forecast.csv")
+    forecast_df = pd.read_csv(os.path.join(BASE_DIR, 'Future_sales_forecast.csv'))
     forecast_df['ds'] = pd.to_datetime(forecast_df['ds'])
 
     #30 days Forecast Chart 
